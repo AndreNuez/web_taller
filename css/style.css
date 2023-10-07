@@ -5,6 +5,7 @@ body{
     background-size: contain;
 }
 
+/*Estilos para header*/
 
 .nav{
     display: flex;
@@ -46,7 +47,9 @@ body{
     box-shadow: 5px;
 }
 
-.container{
+/*Estilos para contenedor 1*/
+
+.container1{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -78,6 +81,8 @@ iframe{
     height:300px; 
     border:0;
 }
+
+/*Estilos para contenedor 2*/
 
 .container2{
     display: flex;
@@ -120,6 +125,8 @@ iframe{
     color: #d66372;
 }
 
+/*Estilos para footer*/
+
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -143,6 +150,7 @@ footer{
     padding: 10px;
 }
 
+/* Aún sin funcionar.
 
 @media (max-width: 600px) {
     .container{
@@ -150,3 +158,4 @@ footer{
         align-items: flex-start;
     }
 }
+*/
