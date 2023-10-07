@@ -8,7 +8,6 @@ body{
 
 .nav{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -47,58 +46,61 @@ body{
     box-shadow: 5px;
 }
 
-.title{
+.container{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin:20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.title{
     font-family: 'Pacifico', cursive;
     font-size: 60px;
     color: white;
     background-color: #49262c;
     text-align: center;
-    margin: 40px;
-    padding: 10px;
+    margin: 35px;
+    padding: 20px;
 }
 
-.container{
+.acercade{
+    font-family: 'Salsa', cursive;
+    margin-top: 15px;
+}
+
+iframe{
+    width:400px; 
+    height:300px; 
+    border:0;
+}
+
+.container2{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.acercade{
-    flex: 1;
-    font-family: 'Salsa', cursive;
-    margin-right: 10px;
-}
-
-.mapa{
-    flex: 1;
-    border-color: black;
-    border-width: 5px;
-    border-style: solid;
-    height: 350px;
-    margin-left: 10px;
+    margin:20px;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 
 .conocenos{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     font-size: 25px;
     font-family: 'Salsa', cursive;
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .botones{
     flex: 1;
+    align-items: center;
     border-color: #d66372;
     background-color: white;
     border-width: 15px;
@@ -123,7 +125,6 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
-    margin: 20px;
 }
 
 .ig{
@@ -132,20 +133,20 @@ footer{
 }
 
 .iglogo{
-    padding: 20px;
+    padding: 10px;
 }
 
 .copy{
-    margin-top: 15px;
     font-size: 15px;
     color: black;
     text-decoration: none;
+    padding: 10px;
 }
 
 
 @media (max-width: 600px) {
     .container{
-        flex-direction:column;
+        flex-direction: column;
         align-items: flex-start;
     }
 }
