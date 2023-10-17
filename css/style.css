@@ -21,6 +21,7 @@ body{
 
 .logo{
     margin: 5px;
+    height: 65px;
 }
 
 .logo:hover{
@@ -141,6 +142,7 @@ footer{
 
 .iglogo{
     padding: 10px;
+    height: 55px;
 }
 
 .copy{
