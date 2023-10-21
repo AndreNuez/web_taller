@@ -13,62 +13,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
 </head>
-    <body>
 
-        <header>
-            <nav class="nav">
-                <a href="../index.html">
-                    <img class="logo" src="../img/cascaralogo.png" alt="logo-taller">
-                </a>
-                <ul class="menu">
-                    <li><a class="li" href="../pages/talleres.html">Talleres</a></li>
-                    <li><a class="li" href="../pages/workshops.html">Workshops</a></li>
-                    <li><a class="li" href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+<body>
 
-        <h1>Contacto</h1>
+    <header>
+        <nav class="nav">
+            <a href="../index.html">
+                <img class="logo" src="../img/cascaralogo.png" alt="logo-taller">
+            </a>
+            <ul class="menu">
+                <li><a class="li" href="../pages/talleres.html">Talleres</a></li>
+                <li><a class="li" href="../pages/workshops.html">Workshops</a></li>
+                <li><a class="li" href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="titulocontacto">Completa el formulario y nos contactaremos a la brevedad</h1>
+
+    <section class="formulario">
         <form>
-            <fieldset>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Nombre">
-                <br>
-                <label for="email">Mail:</label>
-                <input type="email" name="email" placeholder="Email">
-                <br>
-                <label for="taller">Taller/Workshop:</label>
-                <select>
-                    <option>Dibujo</option>
-                    <option>Manga</option>
-                    <option>Gitarra</option>
-                    <option>Teatro</option>
-                    <option>Encuadernación</option>
-                    <option>Lettering</option>
-                </select>
-                <br>
-                <label for="mensaje">Mensaje adicional:</label>
-                <textarea name="mensaje" placeholder="Dejanos acá tu consulta!"></textarea>
-                <br>
-                <input type="submit" name="enviar" value="Enviar">
-            </fieldset>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Nombre">
+            <br>
+            <label for="email">Mail:</label>
+            <input type="email" name="email" placeholder="Email">
+            <br>
+            <label for="taller">Taller/Workshop:</label>
+            <select>
+                <option>Dibujo</option>
+                <option>Manga</option>
+                <option>Gitarra</option>
+                <option>Teatro</option>
+                <option>Encuadernación</option>
+                <option>Lettering</option>
+            </select>
+            <br>
+            <label for="mensaje">Mensaje adicional:</label>
+            <textarea name="mensaje" cols="3" rows="6" placeholder="Dejanos acá tu consulta!"></textarea>
+            <br>
+            <input type="submit" name="enviar" value="Enviar">
         </form>
+    </section>
 
-        <footer>
-            <div class="ig">
-                <h3>Seguinos en Instagram!</h3>
-                <div>
-                    <a href="https://www.instagram.com/cascara_taller/" target="_blank">
-                        <img class="iglogo" src="../img/iglogo.png" alt="ig-logo">
-                    </a>
-                </div>
-            </div>
+    <footer>
+        <div class="ig">
+            <h3>Seguinos en Instagram!</h3>
             <div>
-                <a class="copy" href="https://www.linkedin.com/in/andreavnuñez/" target="_blank">
-                    <b>&copy Copyright Andrea Nuñez - 2023</b>
+                <a href="https://www.instagram.com/cascara_taller/" target="_blank">
+                    <img class="iglogo" src="../img/iglogo.png" alt="ig-logo">
                 </a>
             </div>
-        </footer>
+        </div>
+        <div>
+            <a class="copy" href="https://www.linkedin.com/in/andreavnuñez/" target="_blank">
+                <b>&copy Copyright Andrea Nuñez - 2023</b>
+            </a>
+        </div>
+    </footer>
 
-    </body>
+</body>
+
 </html>

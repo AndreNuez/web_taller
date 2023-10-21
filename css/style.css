@@ -89,6 +89,7 @@ iframe{
 
 /*Estilos para contenedor 2*/
 .conocenos{
+    margin-bottom: 20px;
     font-size: 25px;
     font-family: 'Salsa', cursive;
     text-align: center;
@@ -100,8 +101,7 @@ iframe{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin: 0 200px 0 200px;
 }
 
 .botones{
@@ -152,6 +152,33 @@ footer{
     text-decoration: none;
     padding: 10px;
 }
+
+/*Estilos para page Contactos */
+
+.titulocontacto{
+    font-family: 'Salsa', cursive;
+    font-size: 20px;
+    color: white;
+    background-color: #49262c;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 45px;
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: 'Salsa', cursive;
+    width: 400px;
+}
+
 
 /* Aún sin funcionar.
 
