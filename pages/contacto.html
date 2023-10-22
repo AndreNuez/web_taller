@@ -30,31 +30,38 @@
     </header>
 
     <h1 class="titulocontacto">Completa el formulario y nos contactaremos a la brevedad</h1>
-
+    <!--Formulario de contacto para envio de información por mail-->
     <section class="formulario">
         <form>
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" placeholder="Nombre">
             <br>
+            <!--Tipo email para que verifique formato-->
             <label for="email">Mail:</label>
             <input type="email" name="email" placeholder="Email">
             <br>
             <label for="taller">Taller/Workshop:</label>
             <select>
+                <!--Opcion por default desabilitada para que siempre deba elegir una opción disponible-->
                 <option selected="true" disabled="disabled">Seleccione una opción...</option>
+                <option>Arte</option>
                 <option>Dibujo</option>
-                <option>Manga</option>
                 <option>Gitarra</option>
+                <option>Grabado</option>
+                <option>Música</option>
                 <option>Teatro</option>
                 <option>Encuadernación</option>
                 <option>Lettering</option>
+                <option>Maceta</option>
             </select>
             <br>
             <label for="mensaje">Mensaje adicional:</label>
             <textarea name="mensaje" cols="3" rows="6" placeholder="Dejanos acá tu consulta!"></textarea>
             <br>
+            <!--btn para enviar la información al  back-->
             <input class="btn" type="submit" name="enviar" value="Enviar">
             <br>
+            <!--btn para restablecer datos a cero-->
             <input class="btn btnreset" type="reset" name="reset" value="Restablecer">
         </form>
     </section>
