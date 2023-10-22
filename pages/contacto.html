@@ -41,6 +41,7 @@
             <br>
             <label for="taller">Taller/Workshop:</label>
             <select>
+                <option selected="true" disabled="disabled">Seleccione una opción...</option>
                 <option>Dibujo</option>
                 <option>Manga</option>
                 <option>Gitarra</option>
@@ -52,7 +53,9 @@
             <label for="mensaje">Mensaje adicional:</label>
             <textarea name="mensaje" cols="3" rows="6" placeholder="Dejanos acá tu consulta!"></textarea>
             <br>
-            <input type="submit" name="enviar" value="Enviar">
+            <input class="btn" type="submit" name="enviar" value="Enviar">
+            <br>
+            <input class="btn btnreset" type="reset" name="reset" value="Restablecer">
         </form>
     </section>
 

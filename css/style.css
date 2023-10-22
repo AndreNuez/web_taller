@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-image: url(../img/fondoNuevo.jpg);
@@ -7,11 +7,11 @@ body{
 
 /*Estilos para header*/
 
-header{
+header {
     flex-flow: column-wrap;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,23 +22,23 @@ header{
     border-style: solid;
 }
 
-.logo{
+.logo {
     max-width: 100%;
     width: 75px;
     margin: 5px;
     height: auto;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
-.menu{
+.menu {
     display: flex;
     flex-wrap: wrap;
 }
 
-.li{
+.li {
     margin: 10px;
     padding: 5px;
     font-family: 'Pacifico', cursive;
@@ -47,14 +47,14 @@ header{
     color: white;
 }
 
-.li:hover{
+.li:hover {
     border-radius: 10%;
     background-color: #49262c;
     box-shadow: 5px;
 }
 
 /*Estilos para contenedor 1*/
-.title{
+.title {
     font-family: 'Pacifico', cursive;
     font-size: 60px;
     color: white;
@@ -62,9 +62,10 @@ header{
     text-align: center;
     margin: 35px;
     padding: 20px;
+    transition: font-size 2s ease-in-out;
 }
 
-.container1{
+.container1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -73,29 +74,29 @@ header{
     margin: 75px;
 }
 
-.acercade{
+.acercade {
     font-family: 'Salsa', cursive;
 }
 
-iframe{
+iframe {
     width: 400px;
     height: 300px;
 }
 
-.mapa{
+.mapa {
     flex: 1;
     margin-top: 40px;
 }
 
 /*Estilos para contenedor 2*/
-.conocenos{
+.conocenos {
     margin-bottom: 20px;
     font-size: 25px;
     font-family: 'Salsa', cursive;
     text-align: center;
 }
 
-.container2{
+.container2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -104,7 +105,7 @@ iframe{
     margin: 0 200px 0 200px;
 }
 
-.botones{
+.botones {
     flex: 1;
     border-color: #d66372;
     background-color: white;
@@ -116,37 +117,37 @@ iframe{
     padding: 20px;
 }
 
-.botones:hover{
+.botones:hover {
     transform: scale(1.1);
 }
 
-.linknav{
+.linknav {
     text-decoration: none;
     color: #d66372;
 }
 
 /*Estilos para footer*/
 
-footer{
+footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
 }
 
-.ig{
+.ig {
     font-family: 'Salsa', cursive;
     font-size: 25px;
 }
 
-.iglogo{
+.iglogo {
     max-width: 100%;
     padding: 10px;
     width: 55px;
     height: auto;
 }
 
-.copy{
+.copy {
     font-size: 15px;
     color: black;
     text-decoration: none;
@@ -155,7 +156,7 @@ footer{
 
 /*Estilos para page Contactos */
 
-.titulocontacto{
+.titulocontacto {
     font-family: 'Salsa', cursive;
     font-size: 20px;
     color: white;
@@ -165,87 +166,118 @@ footer{
     padding: 20px;
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 45px;
 }
 
-form{
+form {
     display: flex;
     flex-flow: column wrap;
-    font-family: 'Salsa', cursive;
     width: 400px;
 }
+
+label, input, select, textarea {
+    font-family: 'Salsa', cursive;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+select {
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #216280;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #047bb3;
+  }
+
+.btnreset{
+    background-color: #707070;
+}
+
+.btnreset:hover{
+    background-color: #a7a5a5;
+}
+
 
 /* Responsive design */
 /* Estilo para pantallas pequeñas*/
 /* Estilo para pantallas de tamaño intermedio*/
 @media (max-width: 425px) {
 
-    .logo{
+    .logo {
         width: 35px;
     }
 
-    .li{
+    .li {
         margin: 5px;
         font-size: 15px;
     }
 
-    .title{
+    .title {
         margin: 15px;
         font-size: 30px;
     }
 
-    .container1{
+    .container1 {
         margin: 20px;
     }
 
-    .acercade{
+    .acercade {
         font-size: 15px;
     }
 
-    iframe{
+    iframe {
         width: 200px;
         height: 150px;
     }
-    
-    .mapa{
+
+    .mapa {
         flex: 1;
         margin-top: 20px;
     }
 
-    .conocenos{
+    .conocenos {
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: 15px;
     }
 
-    .container2{
+    .container2 {
         margin: 0 75px 0 75px;
     }
-    
-    .botones{
+
+    .botones {
         font-size: 15px;
         margin: 10px;
     }
 
-    .ig{
+    .ig {
         font-size: 20px;
     }
 
-    .iglogo{
+    .iglogo {
         width: 35px;
     }
 
-    .titulocontacto{
+    .titulocontacto {
         font-size: 15px;
         margin: 30px;
         padding: 20px;
     }
-    
-    form{
+
+    form {
         width: 200px;
     }
 }
