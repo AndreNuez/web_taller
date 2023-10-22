@@ -179,13 +179,73 @@ form{
     width: 400px;
 }
 
+/* Responsive design */
+/* Estilo para pantallas pequeñas*/
+/* Estilo para pantallas de tamaño intermedio*/
+@media (max-width: 425px) {
 
-/* Aún sin funcionar.
+    .logo{
+        width: 35px;
+    }
 
-@media (min-width: 768px) {
-    .container{
-        flex-direction: column;
-        align-items: flex-start;
+    .li{
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    .title{
+        margin: 15px;
+        font-size: 30px;
+    }
+
+    .container1{
+        margin: 20px;
+    }
+
+    .acercade{
+        font-size: 15px;
+    }
+
+    iframe{
+        width: 200px;
+        height: 150px;
+    }
+    
+    .mapa{
+        flex: 1;
+        margin-top: 20px;
+    }
+
+    .conocenos{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .container2{
+        margin: 0 75px 0 75px;
+    }
+    
+    .botones{
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .ig{
+        font-size: 20px;
+    }
+
+    .iglogo{
+        width: 35px;
+    }
+
+    .titulocontacto{
+        font-size: 15px;
+        margin: 30px;
+        padding: 20px;
+    }
+    
+    form{
+        width: 200px;
     }
 }
-*/
