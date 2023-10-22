@@ -3,10 +3,10 @@ body {
     padding: 0;
     background-image: url(../img/fondoNuevo.jpg);
     background-size: contain;
+    box-sizing: border-box;
 }
 
-/*Estilos para header*/
-
+/*Estilos para header (para index y todas las pages)*/
 header {
     flex-flow: column-wrap;
 }
@@ -53,6 +53,7 @@ header {
     box-shadow: 5px;
 }
 
+/*Estilos para index.html unicamente*/
 /*Estilos para contenedor 1*/
 .title {
     font-family: 'Pacifico', cursive;
@@ -106,7 +107,7 @@ iframe {
 }
 
 .botones {
-    flex: 1;
+    flex: 50%;
     border-color: #d66372;
     background-color: white;
     border-width: 15px;
@@ -126,13 +127,33 @@ iframe {
     color: #d66372;
 }
 
-/*Estilos para footer*/
-
+/*Estilos para footer (para index y todas las pages)*/
 footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
+}
+
+/*Animación Instagram*/
+.ig:hover{
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: initial;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .ig {
@@ -154,7 +175,7 @@ footer {
     padding: 10px;
 }
 
-/*Estilos para page Contactos */
+/*Estilos exclusivos para Contactos*/
 
 .titulocontacto {
     font-family: 'Salsa', cursive;
@@ -210,6 +231,64 @@ select {
     background-color: #a7a5a5;
 }
 
+/*Estilos exclusivos para Talleres y Workshops*/
+
+.containerCards{
+    width: 100%;
+    display: flex;
+}
+
+.card{
+    width: 100%;
+    margin:20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #bd8686;
+    box-shadow: 0px 1px 10px;
+    cursor: default;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px;
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+    font-family: 'Salsa';
+    color:white;
+}
+
+.card .contenido h3{
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.card .contenido p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: white;
+    color: #047bb3;
+}
+
+.card .contenido a:hover{
+    background-color: #047bb3;
+    color:white;
+}
 
 /* Responsive design */
 /* Estilo para pantallas pequeñas*/
