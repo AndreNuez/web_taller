@@ -83,7 +83,6 @@ header {
  
  /*Estilo de los elementos individuales del carrusel*/
  .carousel-item {
-    flex: 1;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
@@ -91,8 +90,9 @@ header {
  
  /*Estilo de las imágenes dentro del carrusel*/
  .carousel-item img {
-    width: 100%;
+    width: 70%;
     height: auto;
+    object-fit: cover;
  }
 
 
