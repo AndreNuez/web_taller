@@ -75,6 +75,27 @@ header {
     margin: 75px;
 }
 
+/*Estilo del contenedor del carrusel*/
+.carousel {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+ }
+ 
+ /*Estilo de los elementos individuales del carrusel*/
+ .carousel-item {
+    flex: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+ }
+ 
+ /*Estilo de las imágenes dentro del carrusel*/
+ .carousel-item img {
+    width: 100%;
+    height: auto;
+ }
+
+
 .acercade {
     font-family: 'Salsa', cursive;
 }
