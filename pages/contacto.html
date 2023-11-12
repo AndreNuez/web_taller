@@ -32,18 +32,18 @@
     <h1 class="titulocontacto">Completa el formulario y nos contactaremos a la brevedad</h1>
     <!--Formulario de contacto para envio de información por mail-->
     <section class="formulario">
-        <form>
+        <form id="contactForm">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="nombre" placeholder="Nombre" required>
             <br>
             <!--Tipo email para que verifique formato-->
             <label for="email">Mail:</label>
-            <input type="email" name="email" placeholder="Email">
+            <input type="email" name="email" placeholder="Email" required>
             <br>
             <label for="taller">Taller/Workshop:</label>
-            <select>
+            <select name="opciones" required>
                 <!--Opcion por default desabilitada para que siempre deba elegir una opción disponible-->
-                <option selected="true" disabled="disabled">Seleccione una opción...</option>
+                <option selected="true" disabled="disabled" value="">Seleccione una opción...</option>
                 <option>Arte</option>
                 <option>Dibujo</option>
                 <option>Gitarra</option>
@@ -59,10 +59,10 @@
             <textarea name="mensaje" cols="3" rows="6" placeholder="Dejanos acá tu consulta!"></textarea>
             <br>
             <!--btn para enviar la información al  back-->
-            <input class="btn" type="submit" name="enviar" value="Enviar">
+            <button class="btn" type="submit">Enviar</button>
             <br>
             <!--btn para restablecer datos a cero-->
-            <input class="btn btnreset" type="reset" name="reset" value="Restablecer">
+            <button class="btn btnreset" type="reset" name="reset">Restablecer</button>
         </form>
     </section>
 
@@ -81,7 +81,7 @@
             </a>
         </div>
     </footer>
-
+    <script src="../scripts/scriptContact.js"></script>
 </body>
 
 </html>

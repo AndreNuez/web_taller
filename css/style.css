@@ -78,7 +78,7 @@ header {
 /*Estilo del contenedor del carrusel*/
 .carousel {
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
  }
  
  /*Estilo de los elementos individuales del carrusel*/
@@ -257,6 +257,7 @@ form {
 label,
 input,
 select,
+button,
 textarea {
     font-family: 'Salsa', cursive;
     margin-bottom: 4px;
