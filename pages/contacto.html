@@ -29,7 +29,7 @@
         </nav>
     </header>
 
-    <h1 class="titulocontacto">Completa el formulario y nos contactaremos a la brevedad</h1>
+    <h1 class="titulocontacto">Completa el formulario y nos contactaremos con vos a la brevedad</h1>
     <!--Formulario de contacto para envio de información por mail-->
     <section class="formulario">
         <form id="contactForm">
@@ -41,22 +41,23 @@
             <input type="email" name="email" placeholder="Email" required>
             <br>
             <label for="taller">Taller/Workshop:</label>
-            <select name="opciones" required>
+            <!--Uso evento onchange con funcion completarMensaje()-->
+            <select id="opciones" onchange="completarMensaje()" required>
                 <!--Opcion por default desabilitada para que siempre deba elegir una opción disponible-->
                 <option selected="true" disabled="disabled" value="">Seleccione una opción...</option>
-                <option>Arte</option>
-                <option>Dibujo</option>
-                <option>Gitarra</option>
-                <option>Grabado</option>
-                <option>Música</option>
-                <option>Teatro</option>
-                <option>Encuadernación</option>
-                <option>Lettering</option>
-                <option>Maceta</option>
+                <option value="Arte">Arte</option>
+                <option value="Dibujo">Dibujo</option>
+                <option value="Guitarra">Guitarra</option>
+                <option value="Grabado">Grabado</option>
+                <option value="Música">Música</option>
+                <option value="Teatro">Teatro</option>
+                <option value="Encuadernación">Encuadernación</option>
+                <option value="Lettering">Lettering</option>
+                <option value="Macetas">Macetas</option>
             </select>
             <br>
-            <label for="mensaje">Mensaje adicional:</label>
-            <textarea name="mensaje" cols="3" rows="6" placeholder="Dejanos acá tu consulta!"></textarea>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" cols="3" rows="6" placeholder="Dejanos acá tu consulta!" required></textarea>
             <br>
             <!--btn para enviar la información al  back-->
             <button class="btn" type="submit">Enviar</button>
